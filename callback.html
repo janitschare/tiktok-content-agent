@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Callback – TikTok Content Agent</title>
+</head>
+<body>
+  <h2>Login erfolgreich!</h2>
+  <p>Sie wurden erfolgreich über TikTok OAuth authentifiziert.</p>
+  <p>Dieser Platzhalter bestätigt nur den Redirect-Flow.</p>
+  <script>
+    // Tokens/Parameter aus der URL auslesen
+    const params = new URLSearchParams(window.location.search);
+    console.log("OAuth Callback Params:", Object.fromEntries(params.entries()));
+  </script>
+</body>
+</html>
